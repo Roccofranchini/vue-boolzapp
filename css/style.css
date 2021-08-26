@@ -1,18 +1,34 @@
-header {
-	height: 60px;
-}
-
-.header-img {
-	height: 50px;
-	border-radius: 50%;
-}
-
 .whatsapp {
 	height: 90vh;
 }
 
+header {
+	height: 60px;
+	background-color: #eaeaea;
+}
+
+.header-img {
+	height: 45px;
+	border-radius: 50%;
+}
+
+.user-button > i {
+	color: rgb(170, 170, 170);
+	font-size: 20px;
+	margin: 0 8px;
+}
+
+.notification {
+	height: 65px;
+	background-color: #8edafc;
+}
+
+.search {
+	height: 40px;
+}
+
 .conversations {
-	height: 465px;
+	height: calc(90vh - 170px);
 	overflow: auto;
 }
 
