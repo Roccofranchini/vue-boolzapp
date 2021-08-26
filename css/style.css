@@ -28,7 +28,7 @@ header {
 }
 
 .conversations {
-	height: calc(90vh - 170px);
+	height: calc(90vh - 165px);
 	overflow: auto;
 }
 
