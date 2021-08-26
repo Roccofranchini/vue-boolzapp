@@ -69,45 +69,20 @@
 							/>
 						</div>
 						<div class="conversations bg-light py-2">
-							<div class="conversation conversation-active">
+							<div
+								v-for="(contact, index) in contacts"
+								class="conversation conversation-active"
+							>
 								<div class="row w-100">
 									<div class="col-3">
 										<img
 											class="conversations-img"
-											src="./img/avatar_1.jpg"
+											src="./img/avatar_6.jpg"
 											alt=""
 										/>
 									</div>
 									<div class="col-9">
-										<h6>Michele</h6>
-									</div>
-								</div>
-							</div>
-							<div class="conversation">
-								<div class="row w-100">
-									<div class="col-3">
-										<img
-											class="conversations-img"
-											src="./img/avatar_5.jpg"
-											alt=""
-										/>
-									</div>
-									<div class="col-9">
-										<h6>Gianni</h6>
-									</div>
-								</div>
-							</div>
-							<div class="conversation">
-								<div class="row w-100">
-									<div class="col-3">
-										<img
-											class="conversations-img"
-											src="./img/avatar_8.jpg"
-											alt=""
-										/>
-									</div>
-									<div class="col-9">
-										<h6>Peppo</h6>
+										<h6>{{contact.name}}</h6>
 									</div>
 								</div>
 							</div>
@@ -183,6 +158,7 @@
 				</div>
 			</div>
 		</section>
+		<script src="./js/users.js"></script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>

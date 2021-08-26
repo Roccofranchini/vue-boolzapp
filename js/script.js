@@ -4,6 +4,9 @@ Vue.config.devtools = true;
 
 const root = new Vue({
 	el: "#root",
-	data: {},
+	data: {
+		user,
+		contacts,
+	},
 	methods: {},
 });
