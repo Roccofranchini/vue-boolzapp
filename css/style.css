@@ -28,7 +28,7 @@ header {
 
 .user-button > i {
 	color: rgb(170, 170, 170);
-	font-size: 20px;
+	font-size: 25px;
 	margin: 0 8px;
 }
 
@@ -90,6 +90,31 @@ header {
 .chat {
 	height: calc(90vh - 120px);
 	overflow: auto;
+	background-image: url(../img/mine.jpg);
+}
+
+.chat-buttons i {
+	color: rgb(170, 170, 170);
+	font-size: 25px;
+	margin: 0 8px;
+}
+
+.chat .message {
+	border: 1px solid lightgray;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.chat .sent {
+	display: flex;
+	justify-content: flex-end;
+	background-color: ;
+}
+
+.chat .recieved {
+	display: flex;
+	justify-content: flex-start;
 }
 
 .chat-tools {
