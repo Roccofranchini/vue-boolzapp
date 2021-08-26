@@ -1,3 +1,17 @@
+/* UTILZ */
+
+.sm-txt {
+	font-size: 12px;
+	font-weight: 520;
+}
+
+/* + */
+
+body {
+	background: linear-gradient(to top, #d2dbdc 50%, #dddbd1 75%, #009688 75%);
+	background-repeat: no-repeat;
+	height: 100vh;
+}
 .whatsapp {
 	height: 90vh;
 }
@@ -23,8 +37,32 @@ header {
 	background-color: #8edafc;
 }
 
+.notification > i {
+	font-size: 20px;
+	color: #8edafc;
+	background-color: white;
+	border-radius: 50%;
+	padding: 10px 8px;
+	margin: 0 8px;
+}
+
 .search {
 	height: 40px;
+}
+
+#root .search input {
+	border-radius: 5px;
+	border: 1px solid lightgray;
+}
+
+#root .search input:focus-visible {
+	border: 1px solid lightgray;
+	box-shadow: none;
+}
+
+#root .search i {
+	left: 20%;
+	color: gray;
 }
 
 .conversations {

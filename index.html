@@ -22,9 +22,9 @@
 		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 	</head>
 
-	<body class="bg-danger">
+	<body>
 		<section id="root">
-			<div class="container bg-danger my-4 whatsapp">
+			<div class="container bg-transparent my-4 whatsapp">
 				<div class="row h-100 g-0">
 					<div class="col-4 h-100">
 						<header class="d-flex justify-content-between align-items-center">
@@ -42,11 +42,32 @@
 								<i class="fas fa-ellipsis-v"></i>
 							</div>
 						</header>
-						<div class="notification">
-							<h6 class="py-3">Ricevi notifiche di nuovi messaggi</h6>
+						<div class="notification d-flex align-items-center px-2">
+							<i class="fas fa-bell-slash"></i>
+							<div class="notification-txt">
+								<p class="pt-3 mb-0 fs-6">Ricevi notifiche di nuovi messaggi</p>
+								<p class="sm-txt text-decoration-underline text-secondary">
+									Attiva notifiche desktop
+								</p>
+							</div>
 						</div>
-						<div class="search py-2 d-flex align-items-center">
-							<input type="text" class="w-100" />
+						<div
+							class="
+								search
+								py-4
+								bg-light
+								d-flex
+								align-items-center
+								justify-content-center
+								position-relative
+							"
+						>
+							<i class="fas fa-search position-absolute"></i>
+							<input
+								type="text"
+								class="w-75 text-center"
+								placeholder="Cerca o inizia una nuova chat"
+							/>
 						</div>
 						<div class="conversations bg-light">
 							<div class="">
