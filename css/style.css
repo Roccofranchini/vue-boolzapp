@@ -1,3 +1,7 @@
+header {
+	height: 60px;
+}
+
 .header-img {
 	height: 50px;
 	border-radius: 50%;
@@ -8,6 +12,15 @@
 }
 
 .conversations {
-	height: 470px;
+	height: 465px;
 	overflow: auto;
+}
+
+.chat {
+	height: calc(90vh - 120px);
+	overflow: auto;
+}
+
+.chat-tools {
+	height: 60px;
 }
