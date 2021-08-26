@@ -126,4 +126,16 @@ header {
 
 .chat-tools {
 	height: 60px;
+	background-color: #f3eeea;
+}
+
+.chat-tools i {
+	color: rgb(100, 98, 98);
+	font-size: 25px;
+	margin: 0 8px;
+}
+
+#root .chat-tools input {
+	border-radius: 5px;
+	border: 1px solid lightgray;
 }
