@@ -5,6 +5,14 @@
 	font-weight: 520;
 }
 
+.bg-sent {
+	background-color: #d5f9ba;
+}
+
+.bg-recieved {
+	background-color: white;
+}
+
 /* + */
 
 body {
@@ -101,15 +109,14 @@ header {
 
 .chat .message {
 	border: 1px solid lightgray;
-	padding: 5px;
-	margin: 5px;
+	padding: 10px;
+	margin: 10px 40px;
 	border-radius: 10px;
 }
 
 .chat .sent {
 	display: flex;
 	justify-content: flex-end;
-	background-color: ;
 }
 
 .chat .recieved {
