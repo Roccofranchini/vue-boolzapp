@@ -1,0 +1,13 @@
+.header-img {
+	height: 50px;
+	border-radius: 50%;
+}
+
+.whatsapp {
+	height: 90vh;
+}
+
+.conversations {
+	height: 470px;
+	overflow: auto;
+}
