@@ -27,6 +27,11 @@ const root = new Vue({
 			this.newMessage.message = this.newMessageText;
 			this.contacts[this.currentIndex].messages.push(this.newMessage);
 			this.newMessageText = "";
+			this.newMessage = {
+				date: "ora",
+				message: "",
+				status: "sent",
+			};
 		},
 	},
 });
