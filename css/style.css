@@ -50,6 +50,7 @@ header {
 	color: rgb(170, 170, 170);
 	font-size: 25px;
 	margin: 0 8px;
+	cursor: pointer;
 }
 
 .notification {
@@ -64,6 +65,7 @@ header {
 	border-radius: 50%;
 	padding: 10px 8px;
 	margin: 0 8px;
+	cursor: pointer;
 }
 
 .search {
@@ -117,6 +119,7 @@ header {
 	color: rgb(170, 170, 170);
 	font-size: 25px;
 	margin: 0 8px;
+	cursor: pointer;
 }
 
 .chat .message {
@@ -161,6 +164,7 @@ header {
 	color: rgb(100, 98, 98);
 	font-size: 25px;
 	margin: 0 8px;
+	cursor: pointer;
 }
 
 #root .chat-tools input {
