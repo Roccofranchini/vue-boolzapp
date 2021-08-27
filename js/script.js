@@ -7,6 +7,14 @@ const root = new Vue({
 	data: {
 		user,
 		contacts,
+		currentIndex: 0,
 	},
-	methods: {},
+	methods: {
+		isActive(index) {
+			return this.currentIndex === index ? "active" : "";
+		},
+		setCurrentIndex(index) {
+			this.currentIndex = index;
+		},
+	},
 });

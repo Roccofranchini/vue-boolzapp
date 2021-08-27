@@ -1,5 +1,9 @@
 /* UTILZ */
 
+.clickable {
+	cursor: pointer;
+}
+
 .sm-txt {
 	font-size: 12px;
 	font-weight: 520;
@@ -130,6 +134,14 @@ header {
 
 #root .chat .col-12 .received .message {
 	background-color: white;
+}
+
+#root .convo {
+	display: none;
+}
+
+#root .chat .convo.active {
+	display: inline-block;
 }
 
 .chat-tools {

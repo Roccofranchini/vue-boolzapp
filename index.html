@@ -75,7 +75,10 @@
 								class="conversation"
 								:key="index+contact.avatar"
 							>
-								<div class="row w-100">
+								<div
+									class="row w-100 clickable"
+									@click="setCurrentIndex(index)"
+								>
 									<div class="col-3">
 										<img
 											class="conversations-img"
@@ -115,13 +118,23 @@
 						</header>
 						<div class="chat pt-5">
 							<div class="row column g-0">
-								<div v-for="message in contacts[0].messages" class="col-12">
-									<div :class="message.status">
-										<div class="message px-4">
-											<p class="mb-0">{{message.message}}</p>
-											<p class="mb-0 sm-txt text-end text-secondary">
-												{{message.date}}
-											</p>
+								<div
+									v-for="(contact, index) in contacts"
+									class="convo"
+									:class="isActive(index)"
+								>
+									<div
+										v-for="(message, index) in contact.messages"
+										class="col-12"
+										v-if=""
+									>
+										<div :class="message.status">
+											<div class="message active px-4">
+												<p class="mb-0">{{message.message}}</p>
+												<p class="mb-0 sm-txt text-end text-secondary">
+													{{message.date}}
+												</p>
+											</div>
 										</div>
 									</div>
 								</div>
