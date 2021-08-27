@@ -169,6 +169,8 @@
 										type="text"
 										class="w-100 h-75 px-3"
 										placeholder="Scrivi un messaggio.."
+										v-model="newMessageText"
+										@keyup.enter="sendMessage"
 									/>
 								</div>
 								<div

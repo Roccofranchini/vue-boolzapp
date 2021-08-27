@@ -8,6 +8,12 @@ const root = new Vue({
 		user,
 		contacts,
 		currentIndex: 0,
+		newMessage: {
+			date: "ora",
+			message: "",
+			status: "sent",
+		},
+		newMessageText: "",
 	},
 	methods: {
 		isActive(index) {
@@ -15,6 +21,12 @@ const root = new Vue({
 		},
 		setCurrentIndex(index) {
 			this.currentIndex = index;
+		},
+		sendMessage() {
+			console.log(this.newMessage.message);
+			this.newMessage.message = this.newMessageText;
+			this.contacts[this.currentIndex].messages.push(this.newMessage);
+			this.newMessageText = "";
 		},
 	},
 });
