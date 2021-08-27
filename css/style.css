@@ -16,7 +16,7 @@
 /* + */
 
 body {
-	background: linear-gradient(to top, #d2dbdc 50%, #dddbd1 80%, #009688 80%);
+	background: linear-gradient(to top, #d2dbdc 50%, #dddbd1 85%, #009688 85%);
 	background-repeat: no-repeat;
 	height: 100vh;
 }
@@ -122,6 +122,14 @@ header {
 .chat .recieved {
 	display: flex;
 	justify-content: flex-start;
+}
+
+#root .chat .col-12.sent .message {
+	background-color: #d5f9ba;
+}
+
+#root .chat .col-12.recieved .message {
+	background-color: white;
 }
 
 .chat-tools {
