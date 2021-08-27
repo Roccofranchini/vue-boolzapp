@@ -31,10 +31,10 @@
 							<div class="user">
 								<img
 									class="header-img my-1 mx-1"
-									src="./img/avatar_2.jpg"
-									alt=""
+									:src="`img/avatar${user.avatar}.jpg`"
+									:alt="user.name"
 								/>
-								<span>Nome Utente</span>
+								<span>{{user.name}}</span>
 							</div>
 							<div class="user-button">
 								<i class="fas fa-circle-notch"></i>
@@ -78,7 +78,7 @@
 									<div class="col-3">
 										<img
 											class="conversations-img"
-											src="./img/avatar_6.jpg"
+											:src="`img/avatar${contact.avatar}.jpg`"
 											alt=""
 										/>
 									</div>
