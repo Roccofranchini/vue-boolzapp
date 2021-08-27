@@ -145,5 +145,5 @@ header {
 
 #root .chat-tools input {
 	border-radius: 5px;
-	border: 1px solid lightgray;
+	border: 0;
 }

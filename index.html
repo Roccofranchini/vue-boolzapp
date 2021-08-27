@@ -73,6 +73,7 @@
 							<div
 								v-for="(contact, index) in contacts"
 								class="conversation conversation-active"
+								:key="index+contact.avatar"
 							>
 								<div class="row w-100">
 									<div class="col-3">
@@ -164,7 +165,7 @@
 				</div>
 			</div>
 		</section>
-		<script src="./js/users.js"></script>
+		<script src="./js/data.js"></script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>
