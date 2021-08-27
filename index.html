@@ -72,7 +72,7 @@
 						<div class="conversations bg-light">
 							<div
 								v-for="(contact, index) in contacts"
-								class="conversation conversation-active"
+								class="conversation"
 								:key="index+contact.avatar"
 							>
 								<div class="row w-100">
@@ -115,20 +115,14 @@
 						</header>
 						<div class="chat pt-5">
 							<div class="row column g-0">
-								<div class="col-12 sent">
-									<div class="message px-4">
-										<p class="mb-0">Hai portato a spasso il cane?</p>
-										<p class="mb-0 sm-txt text-end text-secondary">
-											10/012020 15:30:55
-										</p>
-									</div>
-								</div>
-								<div class="col-12 recieved">
-									<div class="message px-4">
-										<p class="mb-0">Tutto fatto!</p>
-										<p class="mb-0 sm-txt text-end text-secondary">
-											10/012020 16:39:05
-										</p>
+								<div v-for="message in contacts[0].messages" class="col-12">
+									<div :class="message.status">
+										<div class="message px-4">
+											<p class="mb-0">{{message.message}}</p>
+											<p class="mb-0 sm-txt text-end text-secondary">
+												{{message.date}}
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>

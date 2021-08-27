@@ -119,16 +119,16 @@ header {
 	justify-content: flex-end;
 }
 
-.chat .recieved {
+.chat .received {
 	display: flex;
 	justify-content: flex-start;
 }
 
-#root .chat .col-12.sent .message {
+#root .chat .col-12 .sent .message {
 	background-color: #d5f9ba;
 }
 
-#root .chat .col-12.recieved .message {
+#root .chat .col-12 .received .message {
 	background-color: white;
 }
 
