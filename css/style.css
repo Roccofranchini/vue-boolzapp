@@ -38,6 +38,14 @@ header {
 	border-radius: 50%;
 }
 
+#root .chat-header {
+	display: none;
+}
+
+#root .chat-header.active {
+	display: flex;
+}
+
 .user-button > i {
 	color: rgb(170, 170, 170);
 	font-size: 25px;
