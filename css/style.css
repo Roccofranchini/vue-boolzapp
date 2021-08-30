@@ -105,8 +105,8 @@ header {
 	align-items: center;
 }
 
-.conversation-active {
-	background-color: #e9ebeb;
+.convactive {
+	background-color: #ccd1d1;
 }
 
 .chat {

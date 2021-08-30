@@ -76,8 +76,7 @@
 							<div class="conversations bg-light">
 								<div
 									v-for="(contact, index) in contacts"
-									class="conversation"
-									:class="this.currentIndex !== index ? 'bg-secondary' : 'bg-light'"
+									:class="['conversation', {convactive: index === currentIndex}]"
 									:key="index+contact.avatar"
 								>
 									<div
