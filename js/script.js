@@ -9,7 +9,7 @@ const root = new Vue({
 		contacts,
 		currentIndex: 0,
 		newMessage: {
-			date: "ora",
+			date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
 			message: "",
 			status: "sent",
 		},
@@ -23,15 +23,24 @@ const root = new Vue({
 			this.currentIndex = index;
 		},
 		sendMessage() {
-			console.log(this.newMessage.message);
-			this.newMessage.message = this.newMessageText;
-			this.contacts[this.currentIndex].messages.push(this.newMessage);
-			this.newMessageText = "";
-			this.newMessage = {
-				date: "ora",
-				message: "",
-				status: "sent",
-			};
+			if (this.newMessageText !== "") {
+				this.newMessage.message = this.newMessageText;
+				this.contacts[this.currentIndex].messages.push(this.newMessage);
+				this.newMessageText = "";
+				this.newMessage = {
+					date: "ora",
+					date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+					status: "sent",
+				};
+			}
+			setTimeout(() => {
+				const answerMessage = {
+					status: "received",
+					message: "ok",
+					date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+				};
+				this.contacts[this.currentIndex].messages.push(answerMessage);
+			}, 1000);
 		},
 	},
 });
