@@ -42,5 +42,10 @@ const root = new Vue({
 				this.contacts[this.currentIndex].messages.push(answerMessage);
 			}, 1000);
 		},
+		getLastSeen() {
+			const messages = this.contacts[this.currentIndex].messages;
+			const lastMessage = messages[messages.length - 1];
+			return lastMessage.date;
+		},
 	},
 });

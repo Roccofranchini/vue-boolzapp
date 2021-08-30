@@ -77,6 +77,7 @@
 								<div
 									v-for="(contact, index) in contacts"
 									class="conversation"
+									:class="this.currentIndex !== index ? 'bg-secondary' : 'bg-light'"
 									:key="index+contact.avatar"
 								>
 									<div
@@ -117,7 +118,7 @@
 												<div class="chat-info py-2">
 													<h6 class="mb-0">{{contact.name}}</h6>
 													<span class="sm-txt text-secondary"
-														>Ultimo accesso oggi alle</span
+														>Ultimo accesso oggi alle {{getLastSeen()}}</span
 													>
 												</div>
 											</div>
