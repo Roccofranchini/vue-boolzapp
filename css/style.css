@@ -9,6 +9,10 @@
 	font-weight: 520;
 }
 
+.xs-txt {
+	font-size: 12px;
+}
+
 .bg-sent {
 	background-color: #d5f9ba;
 }

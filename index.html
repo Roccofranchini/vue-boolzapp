@@ -93,7 +93,13 @@
 											/>
 										</div>
 										<div class="col-9">
-											<h6>{{contact.name}}</h6>
+											<h6 class="p-0">{{contact.name}}</h6>
+											<p class="xs-txt p-0 m-0 text-secondary">
+												{{getLastSeenConv(index)}}
+											</p>
+											<p class="xs-txt p-0 m-0 text-secondary">
+												{{getLastText(index)}}
+											</p>
 										</div>
 									</div>
 								</div>
@@ -119,7 +125,7 @@
 												<div class="chat-info py-2">
 													<h6 class="mb-0">{{contact.name}}</h6>
 													<span class="sm-txt text-secondary"
-														>Ultimo accesso oggi alle {{getLastSeen()}}</span
+														>Ultimo accesso: {{getLastSeen()}}</span
 													>
 												</div>
 											</div>

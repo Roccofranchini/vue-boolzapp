@@ -48,6 +48,16 @@ const root = new Vue({
 			const lastMessage = messages[messages.length - 1];
 			return lastMessage.date;
 		},
+		getLastText(index) {
+			const messages = this.contacts[index].messages;
+			const lastMessage = messages[messages.length - 1];
+			return lastMessage.message;
+		},
+		getLastSeenConv(index) {
+			const messages = this.contacts[index].messages;
+			const lastMessage = messages[messages.length - 1];
+			return lastMessage.date;
+		},
 		displayContact(contact) {
 			console.log(contact);
 			if (!this.searchTerm.trim()) return true;
