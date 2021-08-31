@@ -14,6 +14,7 @@ const root = new Vue({
 			status: "sent",
 		},
 		newMessageText: "",
+		searchTerm: "",
 	},
 	methods: {
 		isActive(index) {
@@ -46,6 +47,13 @@ const root = new Vue({
 			const messages = this.contacts[this.currentIndex].messages;
 			const lastMessage = messages[messages.length - 1];
 			return lastMessage.date;
+		},
+		displayContact(contact) {
+			console.log(contact);
+			if (!this.searchTerm.trim()) return true;
+			const filter = this.searchTerm.trim().toLowerCase();
+			contact = contact.toLowerCase();
+			return contact.includes(filter);
 		},
 	},
 });

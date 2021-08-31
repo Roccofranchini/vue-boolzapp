@@ -71,6 +71,7 @@
 									type="text"
 									class="w-75 text-center"
 									placeholder="Cerca o inizia una nuova chat"
+									v-model="searchTerm"
 								/>
 							</div>
 							<div class="conversations bg-light">
@@ -78,6 +79,7 @@
 									v-for="(contact, index) in contacts"
 									:class="['conversation', {convactive: index === currentIndex}]"
 									:key="index+contact.avatar"
+									v-if="displayContact(contact.name)"
 								>
 									<div
 										class="row w-100 clickable"
