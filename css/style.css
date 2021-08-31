@@ -129,6 +129,18 @@ header {
 	border-radius: 10px;
 }
 
+.chat .message:hover .cross {
+	visibility: visible;
+}
+
+.cross {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	font-size: 10px;
+	visibility: hidden;
+}
+
 .chat .sent {
 	display: flex;
 	justify-content: flex-end;

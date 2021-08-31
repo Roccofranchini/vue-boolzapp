@@ -55,5 +55,9 @@ const root = new Vue({
 			contact = contact.toLowerCase();
 			return contact.includes(filter);
 		},
+		deleteMessage(index) {
+			console.log(index);
+			this.contacts[this.currentIndex].messages.splice(index, 1);
+		},
 	},
 });

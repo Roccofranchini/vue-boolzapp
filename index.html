@@ -145,11 +145,15 @@
 											v-if=""
 										>
 											<div :class="message.status">
-												<div class="message active px-4">
+												<div class="message active position-relative px-4">
 													<p class="mb-0">{{message.message}}</p>
 													<p class="mb-0 sm-txt text-end text-secondary">
 														{{message.date}}
 													</p>
+													<i
+														class="fas fa-times-circle cross"
+														@click="deleteMessage(index)"
+													></i>
 												</div>
 											</div>
 										</div>
