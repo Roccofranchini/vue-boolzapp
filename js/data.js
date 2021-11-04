@@ -20,7 +20,7 @@ const contacts = [
 			},
 			{
 				date: "10/01/2020 16:15:22",
-				message: "Tutto fatto!",
+				message: "Già fatto!",
 				status: "received",
 			},
 		],
